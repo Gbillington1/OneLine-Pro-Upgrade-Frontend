@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta property="og:title" content="Thank You">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Thank you for downloading OneLine.">
+  <meta property="og:image" content="https://useoneline.com/thankyou/images/Screenshot1.png">
+  <meta property="og:url" content="https://useoneline.com/thankyou">
+  <link rel="icon" href="images/icon128.png" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>Upgrade to Pro</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="media">
+      <a href="https://useoneline.com">
+        <image class="mr-4" src="images/icon128.png" width="48px"></image>
+      </a>
+    </div>
+    <a class="navbar-brand text-dark" href="https://useoneline.com">OneLine</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active text-dark" href="https://useoneline.com">Home</a>
+        <a class="nav-item nav-link text-dark" href="https://useoneline.com/thankyou/">Thank You</a>
+        <a class="nav-item nav-link text-dark" href="https://useoneline.com/demo/">Demo</a>
+        <a class="nav-item nav-link text-dark" href="https://useoneline.com/upgrade/">Upgrade to Pro<span
+            class="sr-only">(current)</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero text-center bg-white pt-4 pb-4">
+    <div class="container mt-4 mb-4" style="padding:50px 0 50px 0;">
+      <h1 class="display-3 text-dark">Upgrade to Pro</h1>
+      <div class="pt-4">
+        <!-- <a href="http://localhost:3000/checkout"> -->
+          <div class="btn btn-primary" id='checkout-button'>
+            <image src="images/icon128.png" width="25px"></image>
+            Upgrade
+          </div>
+        <!-- </a> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="hero bg-primary text-center">
+    <div class="container p-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <!-- Lead Paragraphs -->
+          <p class='h3 text-light p-3'>What is OneLine Pro?</p>
+          <p class="lead text-light font-weight-normal">
+            OneLine Pro is a $5, one time payment, upgrade from OneLine. As of now, it comes with the Text-to-Speech
+            feature, but Pro users will get access to every pro feature that comes out in the future.
+          </p>
+          <p class='h3 text-light p-3'>What will I get out of OneLine Pro?</p>
+          <p class="lead text-light font-weight-normal">
+            OneLine Pro allows access to the <em>Text-to-Speech</em> feature. This feature enables OneLine to read to
+            you while you are using OneLine. This feature has a very positive impact, as they you now <em>hearing</em>
+            the words at the same time that you are reading them. With two of your senses (hearing and sight) focused on
+            one task, you manage to decrease the margin for reading error, leading to a more pleasant reading
+            experience.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="text-center bg-dark p-3" style="box-shadow: 0 50vh 0 50vh;">
+    <div class="container">
+    </div>
+    <div class="row">
+      <div class="my-auto col-md">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="KQWPK3TGDHSNE" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+            name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </div>
+      <div class="my-auto col-md">
+        <a target="_blank" href="https://github.com/Gbillington1/OneLine-Chrome-Extension">
+          <img src="images/githubimage.png" height="100px">
+        </a>
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="client.js" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154659029-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154659029-3');
+  </script>
+</body>
+
+</html>
