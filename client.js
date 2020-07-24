@@ -5,7 +5,7 @@ const stripe = Stripe('pk_test_51H4YHDAfoYJSaxkzN699e0wYkizVOu8gTyllICcuwTm0OP3L
 var checkoutButton = document.getElementById('checkout-button');
 
 // fetch the sessionId from the backend
-var response = fetch('http://localhost:4242/id').then(function(response) {
+var response = fetch('http://oneline-backend.herokuapp.com/id').then(function(response) {
   return response.json();
 }).then(function(responseJson) {
   var sessionId = responseJson.session_id;
