@@ -22,3 +22,22 @@ var response = fetch('http://localhost:4242/id').then(function(response) {
     });
   });
 })
+
+// production
+// var response = fetch('http://oneline-backend.herokuapp.com/id').then(function(response) {
+//   return response.json();
+// }).then(function(responseJson) {
+//   var sessionId = responseJson.session_id;
+//   checkoutButton.addEventListener('click', function() {
+//     // redirect user to checkout
+//     stripe.redirectToCheckout({
+//       sessionId: sessionId
+//     }).then(function (result) {
+//
+//       // If `redirectToCheckout` fails due to a browser or network
+//       // error, display the localized error message to your customer
+//       // using `result.error.message`.
+//       console.error(result.error.message)
+//     });
+//   });
+// })
